@@ -1,0 +1,50 @@
+.appcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh + 4.65rem);
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.lightmode {
+  background-color: #fff;
+  color: #000;
+}
+
+body.darkmode {
+  background-color: #2b3945;
+  color: #fff;
+}
+
+.buttonUp {
+  position: fixed;
+  bottom: 3.125rem;
+  right: 2.1875rem;
+  transition: 0.3s all ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0rem 0rem 0.625rem 0.0625rem rgb(0, 0, 0, 0.1);
+  opacity: 0;
+}
+
+.buttonUp.active {
+  opacity: 1;
+  cursor: pointer;
+}
